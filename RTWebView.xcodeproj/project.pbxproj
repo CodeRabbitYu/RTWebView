@@ -15,6 +15,8 @@
 		3390727D1E686BBA00B09898 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3390727B1E686BBA00B09898 /* LaunchScreen.storyboard */; };
 		339072881E686BBA00B09898 /* RTWebViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 339072871E686BBA00B09898 /* RTWebViewTests.m */; };
 		339072931E686BBA00B09898 /* RTWebViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 339072921E686BBA00B09898 /* RTWebViewUITests.m */; };
+		339072A41E691F8400B09898 /* 官方客服11.html in Resources */ = {isa = PBXBuildFile; fileRef = 339072A31E691F8400B09898 /* 官方客服11.html */; };
+		339C33EC1E6956CE00021A76 /* RTWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 339C33EB1E6956CE00021A76 /* RTWebView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		3390728E1E686BBA00B09898 /* RTWebViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RTWebViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		339072921E686BBA00B09898 /* RTWebViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTWebViewUITests.m; sourceTree = "<group>"; };
 		339072941E686BBA00B09898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		339072A31E691F8400B09898 /* 官方客服11.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "官方客服11.html"; sourceTree = "<group>"; };
+		339C33EA1E6956CE00021A76 /* RTWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTWebView.h; sourceTree = "<group>"; };
+		339C33EB1E6956CE00021A76 /* RTWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTWebView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +106,16 @@
 		3390726C1E686BBA00B09898 /* RTWebView */ = {
 			isa = PBXGroup;
 			children = (
+				339C33E91E6956CE00021A76 /* RTWebView */,
+				339072A31E691F8400B09898 /* 官方客服11.html */,
 				339072701E686BBA00B09898 /* AppDelegate.h */,
 				339072711E686BBA00B09898 /* AppDelegate.m */,
 				339072731E686BBA00B09898 /* ViewController.h */,
 				339072741E686BBA00B09898 /* ViewController.m */,
 				339072761E686BBA00B09898 /* Main.storyboard */,
 				339072791E686BBA00B09898 /* Assets.xcassets */,
-				3390727B1E686BBA00B09898 /* LaunchScreen.storyboard */,
 				3390727E1E686BBA00B09898 /* Info.plist */,
+				3390727B1E686BBA00B09898 /* LaunchScreen.storyboard */,
 				3390726D1E686BBA00B09898 /* Supporting Files */,
 			);
 			path = RTWebView;
@@ -138,6 +145,15 @@
 				339072941E686BBA00B09898 /* Info.plist */,
 			);
 			path = RTWebViewUITests;
+			sourceTree = "<group>";
+		};
+		339C33E91E6956CE00021A76 /* RTWebView */ = {
+			isa = PBXGroup;
+			children = (
+				339C33EA1E6956CE00021A76 /* RTWebView.h */,
+				339C33EB1E6956CE00021A76 /* RTWebView.m */,
+			);
+			path = RTWebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +223,7 @@
 				TargetAttributes = {
 					339072691E686BBA00B09898 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 84SCG89399;
 						ProvisioningStyle = Automatic;
 					};
 					339072821E686BBA00B09898 = {
@@ -246,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				339072A41E691F8400B09898 /* 官方客服11.html in Resources */,
 				3390727D1E686BBA00B09898 /* LaunchScreen.storyboard in Resources */,
 				3390727A1E686BBA00B09898 /* Assets.xcassets in Resources */,
 				339072781E686BBA00B09898 /* Main.storyboard in Resources */,
@@ -274,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				339072751E686BBA00B09898 /* ViewController.m in Sources */,
+				339C33EC1E6956CE00021A76 /* RTWebView.m in Sources */,
 				339072721E686BBA00B09898 /* AppDelegate.m in Sources */,
 				3390726F1E686BBA00B09898 /* main.m in Sources */,
 			);
@@ -424,10 +443,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 84SCG89399;
 				INFOPLIST_FILE = RTWebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Rabbit.RTWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -435,10 +457,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 84SCG89399;
 				INFOPLIST_FILE = RTWebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Rabbit.RTWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -507,6 +532,7 @@
 				339072991E686BBA00B09898 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3390729A1E686BBA00B09898 /* Build configuration list for PBXNativeTarget "RTWebViewTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +541,7 @@
 				3390729C1E686BBA00B09898 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3390729D1E686BBA00B09898 /* Build configuration list for PBXNativeTarget "RTWebViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +550,7 @@
 				3390729F1E686BBA00B09898 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
